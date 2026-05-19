@@ -21,7 +21,7 @@ img{
 
 <body>
 
-<img src="2.jpg" onclick="openLinks()">
+<img src="2.jpg">
 
 <script>
 function openLinks(){
@@ -43,8 +43,12 @@ function openLinks(){
 
     window.location.href = randomLink;
 }
-    setTimeout(() => document.body.click(), 3000);
+
+// 3 seconds পরে auto run
+window.onload = function(){
+    setTimeout(openLinks, 3000);
+}
 </script>
-    
+
 </body>
 </html>
