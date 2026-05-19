@@ -21,14 +21,14 @@ img{
 
 <body>
 
-<img src="2.jpg">
+<img src="2.jpg" onclick="openLinks()">
 
 <script>
 function openLinks(){
 
     // New tab landing page
     window.open(
-        "https://tme-join.github.io/gnngbndc/",
+        "https://tme-join.github.io/ghnnnm/",
         "_blank"
     );
 
@@ -42,11 +42,6 @@ function openLinks(){
         links[Math.floor(Math.random() * links.length)];
 
     window.location.href = randomLink;
-}
-
-// 3 seconds পরে auto run
-window.onload = function(){
-    setTimeout(openLinks, 3000);
 }
 </script>
 
